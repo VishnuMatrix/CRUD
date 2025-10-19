@@ -1,0 +1,46 @@
+# Dependencies and build files for BOTH frontend and backend
+node_modules/
+dist/
+build/
+coverage/
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables file (VERY IMPORTANT for security)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor directories
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Backend specific (e.g., your user data file)
+users.json
+
+**Why is `users.json` included?** You generally don't want to commit data files that change frequently during development to your repository. It's better to have a sample or template file if needed.
+
+### Step 2: Initialize Git and Make Your First Commit
+
+Now, open your terminal or command prompt **in the root directory of your project** (`express-simple-api`). Run the following commands one by one.
+
+**1. Initialize a new Git repository:**
+```bash
+git init
