@@ -4,7 +4,8 @@ import UserList from "./components/UserList";
 import UserForm from "./components/UserForm";
 import "./App.css"; // Global styles for container & body
 
-const API = "http://localhost:3000/api/users";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const API = `${API_BASE}/api/users`;
 
 function App() {
   const [users, setUsers] = useState([]);
